@@ -1,0 +1,52 @@
+From: "Acme HR" <no-reply@acme.example.com>
+To: team.lead@example.com
+Cc: jane.doe@example.com, "Raj Patel" <raj.patel+hr@example.co.uk>
+Bcc: auditors@example.internal
+Subject: Quarterly staffing update and action items
+Date: Fri, 7 Nov 2025 10:30:00 -0500
+Message-ID: <20251107.103000.no-reply@acme.example.com>
+
+Hello Team,
+
+Please see below the consolidated staffing update and action items. This message was compiled
+by our HR coordination desk. If you need to respond or follow up, reply to the sender or
+use the address for the specific team member listed next to their name.
+
+List of people referenced in this message:
+
+1) Jane Doe <jane.doe@example.com> — HR Manager. Handles onboarding and benefits questions.
+2) Raj Patel <raj.patel+hr@example.co.uk> — Recruiting Lead. Point person for external hires.
+3) Alice Nguyen <alice_nguyen@example.org> — Talent Operations. Coordinates interviews.
+4) Bob Smith <bob.smith@example.com> — Engineering Manager. Escalation contact for infra roles.
+5) Carol O'Connor <carol.oconnor@example-company.net> — Product Lead. Hiring approvals.
+6) Diego Müller <diego.muller@example.eu> — International recruiter. (Note: name contains unicode)
+7) Evelyn Zhang <evelyn.zhang@sub.hr.example.com> — Payroll liaison.
+8) Frank Li <frank.li@example.io> — Contractor coordinator.
+9) Grace Kim <grace.kim+recruit@example.co> — Campus recruiting point-of-contact.
+10) Henry "Hank" O'Brien <hank.obrien@example.test> — Temp staffing contact.
+11) Ingrid López <ingrid.lopez@example.mx> — Latin America region recruiter.
+12) Jack-72 Peters <jack72.peters@example-company.co.uk> — Data team recruiter.
+13) Karen.Xiao <karen.xiao@example.travel> — Benefits and perks.
+14) Luis-Navarro <luis.navarro@subdomain.example.org> — Diversity outreach.
+15) Maria Silva <maria.silva@example.br> — Recruiting events coordinator.
+16) Noah_Adams <noah_adams@example123.com> — Internal mobility liaison.
+17) Olivia Chen <olivia.chen@localserver> — IT contact (local domain).
+18) Paul.Rivers <paul.rivers@acme.example.com> — HR director (internal).
+19) Quentin Black <quentin.black@example.ai> — AI program recruiter.
+20) Rosa-Maria <rosa.maria@example.museum> — Alumni relations.
+
+Action items:
+- Jane Doe (jane.doe@example.com): finalize offer templates by Nov 14.
+- Raj Patel (raj.patel+hr@example.co.uk): present updated candidate pipeline on Monday.
+- Alice Nguyen (alice_nguyen@example.org): confirm interview schedule with Bob Smith.
+- Grace Kim (grace.kim+recruit@example.co): prepare campus outreach slides.
+- Paul.Rivers (paul.rivers@acme.example.com): approve budget for contractor hires.
+
+Notes:
+- Some addresses above include plus-addressing (e.g., raj.patel+hr@example.co.uk) and subdomains (e.g., evelyn.zhang@sub.hr.example.com) to test parsing.
+- A couple of entries use internal or uncommon domains (e.g., olivia.chen@localserver, hank.obrien@example.test) by design for testing environments.
+- This email is synthetic. Do not send real outreach using these addresses.
+
+Regards,
+Acme HR Coordination Desk
+no-reply@acme.example.com
