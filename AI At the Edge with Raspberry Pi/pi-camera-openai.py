@@ -1,0 +1,41 @@
+from openai import OpenAI
+import base64
+import os
+
+def ai(image):
+    key = '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'
+    client = OpenAI(api_key=key)
+
+    def encode_image(image_path):
+        with open(image_path, "rb") as image_file:
+            return base64.b64encode(image_file.read()).decode("utf-8")
+
+    base64_image = encode_image(image)
+
+    response = client.responses.create(
+        model="gpt-4.1",
+        input=[
+            {
+                "role": "user",
+                "content": [
+                    { "type": "input_text", "text": 'Describe People in this image' },
+                    {
+                        "type": "input_image",
+                        "image_url": f"data:image/jpeg;base64,{base64_image}",
+                    },
+                ],
+            }
+        ],
+    )
+
+    return response.output_text
+
+def pic():
+    image = 'picture.jpg'
+    command = f'rpicam-jpeg -o {image}'
+    os.system(command)
+    return image
+
+image = pic()
+response = ai(image)
+print(response)
