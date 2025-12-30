@@ -6,7 +6,7 @@ from gpiozero import MotionSensor
 pir = MotionSensor(21)
 
 def ai(image):
-    key = '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'
+    key = 'YOUR API KEY'
     client = OpenAI(api_key=key)
 
     def encode_image(image_path):
