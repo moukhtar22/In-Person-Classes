@@ -46,7 +46,7 @@ def ai(query):
     injection = 'Answer in fewer than 20 words'
     query = f'{injection} - {query}'
 
-    key = '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'
+    key = 'YOUR API KEY'
     url = "https://api.openai.com/v1/responses"
 
     headers = {
