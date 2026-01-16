@@ -1,0 +1,15 @@
+This is the conversation we have hadMy Query: who was my first president
+your Response: Your first U.S. President was George Washington.
+
+My Query: when was he born
+your Response: George Washington was born on February 22, 1732.
+
+My Query: who was he married to
+your Response: Your first U.S. President, George Washington, was not married during his lifetime.
+
+My Query: when did he die
+your Response: George Washington passed away on December 14, 1799.
+
+My Query: how old was he
+your Response: George Washington was 67 years old at the time of his death.
+
