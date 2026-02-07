@@ -11,7 +11,7 @@ client = ElevenLabs(
 )
 
 client.conversational_ai.twilio.outbound_call(
-    agent_id="agent_9401kg01mj9se15tbrgbmmm217zf",
-    agent_phone_number_id="phnum_6801kg0b7e0sf2er8ar7vbdtre7t",
+    agent_id="agent_9401kg01mj9sxxxxxrgbmmm217zf",
+    agent_phone_number_id="phnum_680xxxxx0sf2er8ar7vbdtre7t",
     to_number="+18283658190"
 )
