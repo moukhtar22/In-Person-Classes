@@ -4,7 +4,7 @@ from ollama import ChatResponse
 injection = 'Answer in Fewer Than 20 Words'
 
 def ai(query):
-  response: ChatResponse = chat(model='phi3', messages=[
+  response: ChatResponse = chat(model='granite4:350m', messages=[
     {
       'role': 'user',
       'content': query,

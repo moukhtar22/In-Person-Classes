@@ -1,10 +1,14 @@
 This is the conversation we have had up until now.
 
-Me: who was president in 1980
-You: Ronald Reagan was president in 1980.
-Me: how old was he at the time
-You: He was 69.
-Me: who was he married to?
-You: He was married to Nancy Reagan.
-Me: how old was she at the time
-You: She was 59.
+Me: who was president in 1978
+You: Jimmy Carter.
+Me: who was his wife
+You: Rosalynn Carter.
+Me: when did they get married
+You: They married on March 20, 1946.
+Me: did they have kids
+You: Yes, they have three children.
+Me: what were their names
+You: James Jr., John, and Robert.
+Me: when was Jr born?
+You: James Jr. was born March 10, 1946.

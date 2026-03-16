@@ -1,7 +1,7 @@
 from ollama import chat
 from ollama import ChatResponse
 
-response: ChatResponse = chat(model='phi3', messages=[
+response: ChatResponse = chat(model='granite4:350m', messages=[
   {
     'role': 'user',
     'content': 'Why is the sky blue?',

@@ -35,19 +35,3 @@ while True:
   response = ai(query)
   print(response)
   print('*****')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

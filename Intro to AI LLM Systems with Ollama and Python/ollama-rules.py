@@ -6,7 +6,7 @@ with open('rules.txt', 'r') as file:
   rules = file.read()
 
 def ai(query):
-  response: ChatResponse = chat(model='phi3', messages=[
+  response: ChatResponse = chat(model='gpt-oss', messages=[
     {
       'role': 'user',
       'content': query,
@@ -21,6 +21,5 @@ while True:
               Add These Instructions: {injection}
               This is the Question: {query}'''
   response = ai(query)
-  # print(query)
   print(response)
   print('*****')

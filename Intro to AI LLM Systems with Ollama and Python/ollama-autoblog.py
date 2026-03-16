@@ -17,7 +17,7 @@ def ai_title(post):
   response: ChatResponse = chat(model='gpt-oss', messages=[
     {
       'role': 'user',
-      'content': f'Provide a title for this blog post in uder 10 words --- {post}',
+      'content': f'Provide a title for this blog post in under 10 words --- {post}',
     },
   ])
   return response.message.content
