@@ -4,15 +4,15 @@ from bottle import run, route, post, request
 injection = 'Answer in Fewer Than 20 Words.'
 
 def ai(query):
-  key = 'YOUR API KEY'
+    key = 'YOUR API KEY'
 
-  client = OpenAI(api_key=key)
+    client = OpenAI(api_key=key)
 
-  response = client.responses.create(
-      model="gpt-5-nano",
-      input=query
-  )
-  return response.output_text
+    response = client.responses.create(
+        model="gpt-5-nano",
+        input=query
+    )
+    return response.output_text
 
 @route('/', method=['GET','POST'])
 def index():
@@ -22,7 +22,8 @@ def index():
         query_full = f'{injection} -- {query}'
         response = ai(query_full)
     else:
-       response = '***'
+        query = 'Please Ask a Question'
+        response = '***'
 
     page = f'''
             <h1>Web App</h1>
@@ -36,4 +37,4 @@ def index():
             '''
     return page
 
-run(host='localhost', port=8080)
+run(host='127.0.0.1', port=8080)

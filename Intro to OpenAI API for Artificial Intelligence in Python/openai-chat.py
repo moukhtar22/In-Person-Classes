@@ -11,5 +11,6 @@ response = client.responses.create(
 print(response)
 print('****')
 print(response.output_text)
+# print(response.output[1].content[0].text)
 print('****')
 print(response.usage.total_tokens)

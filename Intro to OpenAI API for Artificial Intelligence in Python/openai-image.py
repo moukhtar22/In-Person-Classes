@@ -25,4 +25,3 @@ filename = f"{int(time.time())}.png"
 
 with open(filename, "wb") as handler:
     handler.write(img_data)
-

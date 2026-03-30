@@ -7,7 +7,6 @@ injection = 'Add some pasta'
 
 def ai(query):
     key = 'YOUR API KEY'
-
     client = OpenAI(api_key=key)
 
     result = client.images.generate(
@@ -21,30 +20,20 @@ def ai(query):
 
     return image_url, revised_prompt
 
-def download(image_url):
-    img_data = requests.get(image_url).content
-    filename = f"{int(time.time())}.png"
-
-    with open(filename, "wb") as handler:
-        handler.write(img_data)
-
-    return filename
-
 def gallery():
-    with open('gallery.csv', 'r') as file:
+    with open('gallery_simple.csv', 'a+') as file:
+        file.seek(0)
         pictures = file.readlines()
     gallery=''
     for image in pictures:
         item = image.split('|')
         gallery += f'''
-                    <div style="display:inline-block; width:200px; height:auto;">
+                    <div style="display:inline-block; width:200px; height:auto; vertical-align:top;">
                         <img style="width:100%; height:auto;" src="{item[0]}">
                         <p>{item[1]}<p>
                     </div>
                     '''
-
     return gallery
-
 
 @route('/', method=['GET','POST'])
 def index():
@@ -53,7 +42,7 @@ def index():
     if query:
         query_full = f'{injection} -- {query}'
         response = ai(query_full)
-        with open('gallery.csv', 'a') as file:
+        with open('gallery_simple.csv', 'a') as file:
             file.write(f'{response[0]}|{response[1]}\n')
     else:
        response = '***'
@@ -73,5 +62,4 @@ def index():
             '''
     return page
 
-run(host='localhost', port=8080)
-
+run(host='127.0.0.1', port=8080)
